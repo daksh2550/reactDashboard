@@ -5,14 +5,14 @@ name: Node.js CI
 
 on:
   push:
-    branches: [deploy]
+    branches: ["main"]
   # pull_request:
   #   branches: [ "main" ]
 
 jobs:
   build:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
 
     strategy:
       matrix:
